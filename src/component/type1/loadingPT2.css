@@ -1,0 +1,14 @@
+.div-image-con{
+    /* padding-top: 30px;
+    padding-right: 10px; */
+}
+.act-image-con{
+    background-image: url('../../assets/images/Image1.png');
+    transform: scale(0.8);
+    width: 600px;
+    height:780px;
+    background-position: right;
+    justify-content: end;
+    
+
+}

@@ -1,0 +1,49 @@
+/* Container for the navigation bar */
+.navbar-container {
+    background-color: #F7F7F7;
+    padding: 10px 0;
+    text-align: end;
+    padding-right: 30px;
+    border: 1px solid #d7d5d5;
+  }
+  
+  /* Navigation list */
+  .nav1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    margin-left: 30px;
+    background-color: transparent;
+  }
+  
+  /* Navigation items */
+  .navbarItem {
+    margin: 0px;
+    background-color: transparent;
+    
+  }
+  
+  /* Navigation links */
+  .web-link {
+    color: #A4A4A4;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+  }
+  
+  /* Hover effects for navigation links */
+  .web-link:hover {
+    color: #333;
+    /* background-color: #fff; */
+    border-radius: 5px;
+  }
+  
+  /* Active link (if needed) */
+  .web-link:active {
+    background-color: #555;
+  }
+  

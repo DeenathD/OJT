@@ -1,0 +1,121 @@
+.main-con{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: green;
+    padding: 10px;
+    /* margin: 10px; */
+    /* max-width: 50%; */
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    
+
+}
+.con1-part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: aqua; */
+
+
+
+}
+.loading-main-header{
+    color: #1868C5;
+    font-weight:normal;
+    letter-spacing: 3px;
+    font-size: 38px;
+
+
+}
+.part2-para{
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+
+
+}
+.intro-para{
+    color: #000000;
+    font-weight:300;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 19px;
+    /* background-color: azure; */
+
+}
+.button-div{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+.button-div-button-1{
+    background-color: transparent;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    border-radius: 30px;
+    color: #1868C5;
+    border: 1px solid #1868C5;
+    padding: 3px;
+    cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(24, 104, 197, 0.2); 
+    transition: all 0.3s ease;
+    
+
+}
+
+.button-div-button-1:hover {
+    background-color: #1868C5;
+    color: white;
+    box-shadow: 0 4px 10px rgba(24, 104, 197, 0.4); 
+}
+
+.button-div-button-2{
+    background-color: transparent;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    border-radius: 30px;
+    color: #31930E;
+    border: 1px solid #31930E;
+    padding: 3px;
+    cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(49, 147, 14, 0.2); 
+    transition: all 0.3s ease; 
+
+
+}
+
+.button-div-button-2:hover {
+    background-color: #31930E;
+    color: white;
+    box-shadow: 0 4px 10px rgba(49, 147, 14, 0.4);
+}
+.part3-para2{
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+
+}
+.about-para{
+    color: #CACACA;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 18px;
+}
