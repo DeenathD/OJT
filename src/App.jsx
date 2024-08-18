@@ -12,6 +12,7 @@ import Card1 from './component/type 2/Card1'
 import LoadingSection2 from './component/type 2/LoadingSection2'
 import SidePage3 from './Pages/SidePage3'
 import LoadingSection3 from './component/type 2/LoadingSection3'
+import AllDepartment1 from './component/type 3/AllDepartment1'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,8 +29,9 @@ function App() {
     {/* <NavBar2/> */}
     {/* <LoadingSection1/> */}
     {/* <Card1/> */}
-    <SidePage3/>
+    {/* <SidePage3/> */}
     {/* <LoadingSection3/> */}
+    <AllDepartment1/>
     
     
     </>
