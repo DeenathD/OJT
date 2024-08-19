@@ -35,6 +35,7 @@ export default function Info() {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in: ", userCredential.user);
       alert("Logging Successfully!");
+
       await fetchDataFromBackend();
       // You can redirect the user to another page or update the UI here
     } catch (error) {

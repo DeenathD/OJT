@@ -6,14 +6,20 @@ import { useEffect, useState } from "react";
 const ProtectedRoutes = ({ children }) => {
   const location = useLocation();
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+      console.log('Auth state changed:', currentUser);
       setUser(currentUser);
+      setLoading(false);
     });
 
     return () => unsubscribe();
   }, []);
+  if (loading) {
+    return <div>Loading...</div>; // Show a loading message while checking auth state
+  }
 
   return user ? children : <Navigate to="/login" state={{ from: location }} />;
 };

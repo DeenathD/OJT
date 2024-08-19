@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import ProtectedRoutes from "./components/ProtectedRoute";
 import SidePage3 from "./Pages/SidePage3";
 import LoginPage from "./Pages/LoginPage";
@@ -18,11 +18,12 @@ function App() {
             </ProtectedRoutes>
           }
         />
+        <Route path="*" element={<Navigate to="/login" />} /> {/* Catch-all route */}
+        </Routes>
         {/* Add other routes here */}
-      </Routes>
     </Router>
   );
 }
 
 export default App;
-// poddak idapn
+
