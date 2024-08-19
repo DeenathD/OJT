@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../config/firebaseConfigs'; 
 import { useNavigate } from 'react-router-dom';
 import './info.css';
-import SidePage3 from '../../Pages/SidePage3';
+
 
 export default function Info() {
 // State to hold email and password values
