@@ -2,19 +2,40 @@
 import React , { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth"; 
 import { auth } from '../../config/firebaseConfigs'; 
+import { useNavigate } from 'react-router-dom';
 import './info.css';
+import SidePage3 from '../../Pages/SidePage3';
 
 export default function Info() {
 // State to hold email and password values
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); 
+
+  const fetchDataFromBackend = async () => {
+    try {
+      const token = await auth.currentUser?.getIdToken(); // Get the Firebase ID token
+      const response = await fetch('http://localhost:3000/api/getUserData', {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        }
+      });
+      const data = await response.json();
+      console.log('User data:', data);
+      navigate('/home', { state: { userData: data } }); // Navigate to the 'tinker' page with user data
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
 
   // Function to handle login
   const handleLogin = async () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in: ", userCredential.user);
-      alert("Logging Successfully!")
+      alert("Logging Successfully!");
+      await fetchDataFromBackend();
       // You can redirect the user to another page or update the UI here
     } catch (error) {
       console.error("Error logging in: ", error.message);
