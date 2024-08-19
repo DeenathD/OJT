@@ -13,15 +13,13 @@ import LoadingSection2 from './component/type 2/LoadingSection2'
 import SidePage3 from './Pages/SidePage3'
 import LoadingSection3 from './component/type 2/LoadingSection3'
 import AllDepartment1 from './component/type 3/AllDepartment1'
+import LoginPage from './Pages/LoginPage'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <div className="login-page">
-    <Info/>
-    <Login/>
-    </div> */}
+    <LoginPage/>
     {/* <LoadingPT1/>
     <LoadingPT2/> */}
     {/* <SidePage2/> */}
